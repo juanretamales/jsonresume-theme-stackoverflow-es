@@ -14,8 +14,11 @@ jobs:
       - name: Install the dependencies theme
         run: npm install
 
+      - name: Install the dependencies
+        run: npm install resume-cli
+
       - name: Build the resume
-        run: ./node_modules/.bin/resume export public/index.html --theme jsonresume-theme-stackoverflow
+        run: ./node_modules/.bin/resume export public/index.html --theme .
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
