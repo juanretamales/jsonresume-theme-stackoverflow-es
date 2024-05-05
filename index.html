@@ -1,0 +1,1238 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Juan Pablo Retamales Lepe</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+blockquote {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header > div {
+  line-height: 1.5;
+}
+
+#header > div > div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 1rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #profiles a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    margin: 0 0 1em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Juan Pablo Retamales Lepe</h1>
+    			<h2 class="label">Ingeniero de Machine Learning Operations</h2>
+    		</div>
+    
+    		<span class="location">
+    			<span class="city">Santiago,</span>
+    			<span class="region">Región Metropolitana</span>
+    			<span class="countryCode">Chile</span>
+    		</span>
+    
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="far fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:jua.retamales@gmail.com">jua.retamales@gmail.com</a>
+    			</div>
+    			<div class="phone">
+    				<span class="fas fa-mobile-alt"></span>
+    				<a class="hide-href-print" href="tel:+56 951 170 428">+56 951 170 428</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/juanretamales">juanretamales</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/juanretamales/">in/juanretamales</a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section">
+    		<section class="main-summary">
+    			<div><p><p>Ingeniero de Machine Learning Operations con experiencia en desarrollo, despliegue y optimización de soluciones de Inteligencia Artificial. Especializado en AWS, Azure y DigitalOcean, con habilidades en contenedores, ETL y creación de API. Líder de equipos, capacitador y gestor de proyectos ágil. Éxito demostrado en automatización, desarrollo de modelos ML y soluciones innovadoras en análisis de imágenes. Experto en gestión de infraestructura en la nube y metodologías ágiles, centrado en la eficiencia y el rendimiento.</p></p></div>
+    		</section>
+    	</section>
+    
+    <section class="section">
+    	<header>
+    		<h2 class='section-title'>Habilidades</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Trabajo en equipo
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Liderasgo</li>
+    				<li>SCRUM</li>
+    				<li>Kanban</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Programación
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Python</li>
+    				<li>FastAPI</li>
+    				<li>Django</li>
+    				<li>Github</li>
+    				<li>Gitglow</li>
+    				<li>PEP8</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Machine Learning
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Huggingface</li>
+    				<li>Pytorch</li>
+    				<li>Yolo</li>
+    				<li>LLM</li>
+    				<li>LayoutLMv3</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Ciencias de Datos
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>Pandas</li>
+    				<li>SQL</li>
+    				<li>ETL</li>
+    				<li>Grafana</li>
+    				<li>PowerBI</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				DevOps
+    			</h3>
+    			 			<ul class="keywords">
+    				<li>AWS</li>
+    				<li>EC2</li>
+    				<li>S3</li>
+    				<li>BeansTalk</li>
+    				<li>Azure</li>
+    				<li>Digital Ocean</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Experiencia Laboral <span class="item-count">(4)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+            <label for="work-item-0"></label>
+    
+            <header class="clear">
+              <div class="date">
+                (
+                <span class="startDate">01-09-2022</span>
+                <span class="endDate">- Actualmente</span>
+                )
+              </div>
+              <div class="position">Ingeniero de Machine Learning Operations</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://digitaltex.cl">https://digitaltex.cl</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Líder en inteligencia artificial especializado en entrenamiento y despliegue de modelos, liderando equipos para desarrollar soluciones innovadoras en este ámbito.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Desarrollo de soluciones informáticas basadas en inteligencia artificial, trabajando en la automatización de tareas, desarrollos de API's y enviar a producción los modelos ML.</p></p></li>
+              <li><p><p>Responsable del respaldo versionado de conjuntos de datos, modelos de inteligencia artificial y código asociado. Líder del equipo de etiquetado para la creación de conjuntos de datos.</p></p></li>
+              <li><p><p>Creación de una aplicación personalizada centrada en Active Learning para corregir y entrenar modelos de Machine Learning, incluyendo LayoutModel, detección y reconocimiento en imágenes. Proyectos notables incluyen extractores de información para boletas, facturas y otros documentos, así como la detección y reconocimiento de firmas, letreros y códigos en imágenes.</p></p></li>
+              <li><p><p>Desarrollo de soluciones informáticas basadas en el uso de LLM para la creación de asistentes virtuales especializados centrados en la búsqueda selectiva de información en documentos específicos, así como en la extracción inteligente de información desde documentos y correos electrónicos.</p></p></li>
+              <li><p><p>Despliegue de contenedores de AWS y Digital Ocean para arquitecturas distribuidas. Incluidas aplicaciones escalables con Beanstalk</p></p></li>
+              <li><p><p>Entrenamiento y capacitación de nuevo personal en área TI, con énfasis en metodología de trabajo AGIL con Scrum y Kanban, junto a metodología de versiones con Git Flow.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+            <label for="work-item-1"></label>
+    
+            <header class="clear">
+              <div class="date">
+                (
+                <span class="startDate">01-01-2023</span>
+                <span class="endDate">- Actualmente</span>
+                )
+              </div>
+              <div class="position">Desarrollador de aplicaciones y consultor</div>
+                <div class="company"></div>
+            </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Además, en mi tiempo libre, genero ingresos adicionales mediante el desarrollo de aplicaciones y la prestación de servicios de consultoría</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Desarrollo de sitio en django para el registro y salida de contenedores, y la generación dentro del sitio de un dashboard para medir la eficiencia.</p></p></li>
+              <li><p><p>Creación de una automatización para la creación de reportes en Excel basado en reglas y Outlook desde distintas bases de datos.</p></p></li>
+              <li><p><p>Creación de una API para Tercop para consumo externo con excelentes resultados. El sitio actuaba de ETL para otorgar información a los clientes.</p></p></li>
+              <li><p><p>Administrador y consultor para los servicios de Azure a Tercop</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+            <label for="work-item-2"></label>
+    
+            <header class="clear">
+              <div class="date">
+                (
+                <span class="startDate">01-10-2021</span>
+                <span class="endDate">- 30-08-2022</span>
+              </div>
+              <div class="position">Analista de datos y desarrollador de aplicaciones</div>
+                <div class="company"></div>
+            </header>
+    
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://sunai.cl">https://sunai.cl</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Mi papel en la empresa se centraba en el desarrollo de soluciones ETL para la consolidación de datos provenientes de diversas plantas solares, facilitando mediciones precisas y ofreciendo recomendaciones fundamentadas</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Experiencia trabajando con la obtención de datos desde múltiples fuentes de datos, principalmente APIs y archivos CSV a través de ETL’s personalizados escrito en Python, así como también conocimientos básicos de los servicios AWS de Amazon.</p></p></li>
+              <li><p><p>Líder de proyecto de Inteligencia artificial para un sistema de detección y reconocimiento de fallas en paneles fotovoltaicos mediante análisis de imágenes térmicas georreferenciadas, de plantas solares.</p></p></li>
+              <li><p><p>Además, de crear automatizaciones con Python, gestionar y coordinar diversos scripts con el controlador de tareas automáticas Jenkins.</p></p></li>
+              <li><p><p>Finalmente, experiencia en metodología SCRUM-Kanban en un marco colaborativo de trabajo remoto con la plataforma Jira y el sistema de versionamiento de archivos Git para trabajar con Gitlab.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+            <label for="work-item-3"></label>
+    
+            <header class="clear">
+              <div class="date">
+                (
+                <span class="startDate">01-01-2021</span>
+                <span class="endDate">- 30-11-2021</span>
+              </div>
+              <div class="position">Cientifico de datos y automatizador de tareas</div>
+                <div class="company"></div>
+            </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Además, mientras completo mis estudios, genero ingresos adicionales mediante el desarrollo de aplicaciones</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Creación de una automatización para la creación de reportes en Excel y Outlook desde distintas bases de datos.</p></p></li>
+              <li><p><p>Creación de un ETL personalizado con scraper del portal de Lukas Lok Spa, destinado a la generación de reportes para los diversos clientes de estos.</p></p></li>
+              <li><p><p>La automatización de descarga de reportes de distintos sitios bancarios y de delivery para realizar cuadraturas de caja mediante un ETL personalizado.</p></p></li>
+              <li><p><p>También de la publicación de la biblioteca 'DataframeToDB' en el repositorio oficial de Python pypi, el cual ayuda en la exportación de datos a bases de datos relacionales.</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Proyectos <span class="item-count">(5)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Extracción de informacion y conciliador en documentos financieros con LLM</div>
+            <div class="date">
+              <span class="startDate">2024</span>
+              <span class="endDate"></span>
+            </div>
+            <div>El proyecto tiene como objetivo principal implementar un sistema de extracción de información financiera desde documentos semi-estructurados utilizando el modelo de lenguaje mixtral-7b. La iniciativa busca alcanzar una precisión del 90% en la extracción de datos. Además, se incluye la extracción de tablas desde correos electrónicos para realizar conciliación y detectar posibles discrepancias entre los documentos procesados y la información reportada en los emails. La utilización de Mixtral-7b se debe a la necesidad de mantener la confidencialidad de los documentos procesados, evitando la salida de información de la intranet. Finalmente, generar un reporte en excel para el uso interno del equipo del cliente.</div>
+          </header>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Automatización de Verificación de Domicilio mediante Lectura de Boletas de Servicios</div>
+            <div class="date">
+              <span class="startDate">2023</span>
+              <span class="endDate"></span>
+            </div>
+            <div>En este proyecto, lideré un proyecto exitoso que se centró en la automatización de la verificación de domicilio mediante la lectura de boletas de servicios básicos. Implementamos un layout parser para identificar de manera precisa el nombre de la persona, el RUT, el domicilio y la fecha de emisión. Este enfoque permitió acelerar significativamente el proceso de verificación, mejorando la eficiencia operativa y asegurando la calidad de los datos.</div>
+          </header>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Extracción de informacion y conciliador en permisos de circulación</div>
+            <div class="date">
+              <span class="startDate">2023</span>
+              <span class="endDate"></span>
+            </div>
+            <div>El proyecto se centró en acelerar el proceso de conciliación de permisos de circulación, integrando la información de documentos clave como el permiso de circulación, certificado de revisión técnica y de gases, y el seguro obligatorio (SOAP). un layout parser específico para cada tipo de documento, permitiendo la extracción precisa de información y asegurando la eficiencia del proceso, un cortador basado en YOLOv8 para separar documentos en una página, un modelos para clasificar el tipo de documento. Además, se integró la detección de códigos QR para validación externa.</div>
+          </header>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Sistema detector de señaleticas viales</div>
+            <div class="date">
+              <span class="startDate">2022</span>
+              <span class="endDate"></span>
+            </div>
+            <div>El proyecto se enfocó en desarrollar e implementar un sistema altamente eficiente para la clasificación automática de señales a través de videos georreferenciados, con el objetivo de reducir significativamente el tiempo dedicado a generar y analizar informes manuales sobre el estado de dichas señaléticas.</div>
+          </header>
+          <div class="item">
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header class="clear">
+            <div class="position">Sistema detector de Hotspot en plantas solares</div>
+            <div class="date">
+              <span class="startDate">2022</span>
+              <span class="endDate"></span>
+            </div>
+            <div>El proyecto se enfoca en el análisis imágenes térmicas de plantas solares, identificar mesas y detectar hotspots de manera precisa. La detección temprana de hotspots puede ayudar a prevenir daños mayores en los paneles solares y garantizar un rendimiento óptimo de los sistemas fotovoltaicos.</div>
+          </header>
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Educación <span class="item-count">(2)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2016
+              </span>
+              <span class="endDate">
+              - 2019
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Ingeniero Civil en Informática
+              </div>
+              <div class="area">
+                Ciencias de la Computación
+              </div>
+              <div class="institution">
+                Universidad de Santiago de Chile
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2012
+              </span>
+              <span class="endDate">
+              - 2014
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Ingeniero en Informática
+              </div>
+              <div class="area">
+                 Informática y Telecomunicaciones
+              </div>
+              <div class="institution">
+                DUOC UC
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Certificados</h2>
+        </header>
+        <section id="certificates">
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2024-04-25
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      Git, GitHub, GitLab y GitHub Copilot: Uso de repositorios
+                    </div>
+                    <div class="issuer">
+                      Udemy
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.udemy.com/certificate/UC-d388f9eb-2877-468c-94fe-a72fa7c35f71/">https://www.udemy.com/certificate/UC-d388f9eb-2877-468c-94fe-a72fa7c35f71/</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2024-04-24
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      Data Analysis with Python
+                    </div>
+                    <div class="issuer">
+                      FreeCodeCamp
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.freecodecamp.org/certification/JuanRetamales/data-analysis-with-python-v7">https://www.freecodecamp.org/certification/JuanRetamales/data-analysis-with-python-v7</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2021-04-19
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      Python Mega Course : Go Beginner to Expert in Python3
+                    </div>
+                    <div class="issuer">
+                      Udemy
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.udemy.com/certificate/UC-a7f58a9a-31e2-453d-958a-d5339c96e41b/">https://www.udemy.com/certificate/UC-a7f58a9a-31e2-453d-958a-d5339c96e41b/</a>
+                  </span>
+              </div>
+            </section>
+        </section>
+      </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Languajes</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            Español
+          </h3>
+          <div class="item">
+            <div class="level fluency nativo">
+              <em>Nativo</em>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            Ingles
+          </h3>
+          <div class="item">
+            <div class="level fluency medio">
+              <em>Medio</em>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>
