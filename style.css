@@ -347,7 +347,7 @@ section .location {
 .institution::before,
 .organization::before,
 .awarder::before {
-  content: "at ";
+  content: " en ";
 }
 
 .company,
@@ -503,7 +503,7 @@ section .location {
 }
 
 #skills .item {
-  width: 16em;
+  width: 14em;
 }
 
 #skills .item .keywords {
@@ -621,13 +621,20 @@ section .location {
   .company::before,
   .institution::before,
   .organization::before,
+  .certificate-item .header-left .issuer::before
   .awarder::before {
     content: "| ";
   }
   .header-left {
     float: left;
-    width: 70%;
+    width: 80%;
     word-break: normal;
+  }
+  .header-left .name, .header-left .issuer{
+    float: left;
+  }
+  .header-left .issuer{
+    padding-left: 5px;
   }
   .section header .date {
     padding: 0.2em;
@@ -661,7 +668,7 @@ section .location {
   .institution::before,
   .organization::before,
   .awarder::before {
-    content: "at ";
+    content: " en ";
   }
   .main-summary {
     padding: 0;
@@ -714,8 +721,10 @@ section .location {
     font-weight: 600;
   }
   #skills .item {
-    width: calc(100% / 3);
-    padding: 0;
+    width: calc(95% / 4);
+  }
+  #skills .item .keywords {
+    width: calc(95%);
   }
   .highlights {
     margin: 0.5em 0 0 0;
@@ -753,5 +762,14 @@ section .location {
   }
   .fa-map-marker-alt:before {
     padding-left: 0.1em;
+  }
+  #work .date{
+    float: left;
+  }
+  #work .position{
+    float: left;
+  }
+  #education .date{
+    float: left;
   }
 }

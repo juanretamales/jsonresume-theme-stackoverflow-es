@@ -12,28 +12,50 @@
         {{/if}}
 
         <header class="clear">
+          
+          {{#if position}}
+          <div class="position">{{position}}</div>
+          {{/if}}
+          {{#if website}}
+            <span class="company">
+              <a target="_blank" href="{{website}}">
+                </div>
+                {{#if company}}
+                {{company}}
+                {{else}}
+                {{#if name}}
+                {{name}}
+                {{/if}}
+                {{/if}}
+              </a>
+            </span>
+          {{else}}
+            <div class="company">{{company}}</div>
+          {{/if}}
           <div class="date">
             {{#if startDate}}
             (
+            {{else}}
+              {{#if endDate}}
+              (
+              {{/if}}
+            {{/if}}
+            {{#if startDate}}
             <span class="startDate">{{DMY startDate}}</span>
             {{/if}}
             {{#if endDate}}
             <span class="endDate">- {{DMY endDate}}</span>
             {{else}}
             <span class="endDate">- Actualmente</span>
+            {{/if}}
+            {{#if startDate}}
             )
+            {{else}}
+              {{#if endDate}}
+              )
+              {{/if}}
             {{/if}}
           </div>
-          {{#if position}}
-          <div class="position">{{position}}</div>
-          {{/if}}
-          {{#if website}}
-            <span class="company">
-              <a target="_blank" href="{{website}}">{{company}}</a>
-            </span>
-          {{else}}
-            <div class="company">{{company}}</div>
-          {{/if}}
         </header>
 
       {{#location}}

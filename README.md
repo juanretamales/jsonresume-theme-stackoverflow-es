@@ -1,8 +1,12 @@
-# Stack Overflow theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-stackoverflow.svg)](http://badge.fury.io/js/jsonresume-theme-stackoverflow)
+# Stack Overflow spanish theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-stackoverflow.svg)](http://badge.fury.io/js/jsonresume-theme-stackoverflow)
+
+[Fork of main Stack Overflow Theme](https://github.com/francescoes/jsonresume-theme-stackoverflow.git)
+
+This is my version of theme (with little modifications), not all translated but functional for me and you can use.
 
 **Printable version with custom CSS**
 
-[DEMO](https://francesco.netlify.app/)
+[DEMO](https://resume.juanretamales.cl/)
 
 ## Getting started
 
@@ -23,7 +27,7 @@ npm install -g resume-cli
 Clone the repository
 
 ```
-git clone https://github.com/francescoes/jsonresume-theme-stackoverflow.git
+git clone https://github.com/juanretamales/jsonresume-theme-stackoverflow-es.git
 ```
 
 Create a 'resume.json' file in the current folder and follow the [json resume schema](https://jsonresume.org/schema/)
@@ -67,6 +71,19 @@ example of the extra `birth` object:
   "date": "1988"
 }
 ```
+
+if in meta you has askforfullresume on true, add a field on end of resume
+```
+"meta": {
+    "askforfullresume": true
+},
+```
+
+## Utilities
+
+[Resume Builder](https://resume-builder.js.org/es/): You can create a big json and then, disabled unused fields for have two resume. Long with all history and short for job search.
+
+[JSONResume Editor](https://marketplace.visualstudio.com/items?itemName=reflog.jsonresume): If you use VSCode, can use an Extension for Visual Studio Code - JSONResume Editor let's you preview your resume from inside VSCode.
 
 ## Contribution
 
