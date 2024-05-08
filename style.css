@@ -769,7 +769,28 @@ section .location {
   #work .position{
     float: left;
   }
-  #education .date{
+
+  #certificates .clear{
+    width: 100%;
+  }
+  #certificates .date, #certificates .header-left,
+  #education .date, #education .header-left{
+    float: left;
+  }
+  #certificates .issuer, #education .issuer{
+    float: left;
+  }
+  #certificates .issuer::after, #education .issuer::after {
+    content: ")";
+  }
+  #certificates .issuer::before , #education .issuer::before {
+    content: "(";
+  }
+  #certificates .header-left, #education .header-left{
+    width: 80%;
+  }
+  #certificates .name, #education .header-left{
+    padding: 0 10px;
     float: left;
   }
 }

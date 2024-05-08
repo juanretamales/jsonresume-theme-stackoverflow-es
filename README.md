@@ -44,6 +44,12 @@ and simply run:
 resume serve --theme .
 ```
 
+if the json is in other folder or other name, you can use
+
+```
+resume serve --theme . --resume fullresume.json
+```
+
 ### Social Profiles Icons
 
 **Profiles supported with brand colors:**

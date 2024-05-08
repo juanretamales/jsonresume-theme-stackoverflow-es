@@ -6,3 +6,6 @@ resume.pdf
 .DS_Store
 omitir/*
 /omitir
+public/index.zip
+*.zip
+*.pdf
